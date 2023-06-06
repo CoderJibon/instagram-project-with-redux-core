@@ -1,0 +1,544 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Home */
+
+.main {
+  background-color: rgba(128, 128, 128, 0.075);
+  position: relative;
+}
+.main .leftside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 17%;
+  height: 100vh;
+  border-right: 1px solid rgba(128, 128, 128, 0.438);
+}
+.main .leftside .logo {
+  font-family: cursive;
+  font-size: 21px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.main .leftside p {
+  padding: 8px;
+  display: flex;
+  font-size: 15px;
+  gap: 20px;
+  transition: 0.3s;
+  margin: 8px;
+  border-radius: 5px;
+  align-items: center;
+}
+.main .leftside p > * {
+  font-size: 26px;
+  transition: 0.3s;
+}
+.main .leftside p:hover > * {
+  transform: scale(1.1);
+}
+.main .leftside p:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.116);
+}
+
+.main .leftside .more {
+  margin-top: 90px;
+}
+
+.main .middle {
+  position: absolute;
+  width: 30%;
+
+  margin-left: 17%;
+}
+
+.main .middle .story {
+  padding: 40px;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  width: 600px;
+  overflow-x: hidden;
+}
+
+.main .middle .story .story1 img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  outline: 2px solid #dd15b0;
+  border: 2px solid transparent;
+}
+.main .middle .story .story1 p {
+  font-size: 11px;
+}
+
+.main .middle .post {
+  margin-left: 90px;
+}
+.main .middle .post div {
+  /* height: 460px ; */
+  width: 420px;
+}
+.main .middle .post div .header {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+.main .middle .post div .header img {
+  width: 30px;
+  height: 30px;
+  outline: 2px solid #dd15b0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 7px;
+}
+.main .middle .post div .header p {
+  font-size: 12px;
+  color: grey;
+  font-weight: bold;
+}
+.main .middle .post div .header p span {
+  margin-left: 5px;
+}
+.main .middle .post div .header h6 {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: auto;
+}
+.main .middle .post div .body img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.main .middle .post .footer .icon {
+  margin: 10px 0;
+}
+.main .middle .post .footer .icon > * {
+  font-size: 25px;
+  color: rgb(37, 37, 37);
+  margin-right: 18px;
+}
+.main .middle .post .footer .icon > *:last-child {
+  margin-left: 60%;
+  margin-right: 0;
+}
+.main .middle .post .footer .like p {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(54, 53, 53);
+}
+.main .middle .post input {
+  border: none;
+  padding: 5px 0;
+  font-size: 15px;
+  margin-bottom: 5px;
+  width: 100%;
+  outline: none;
+}
+
+.main .middle .post input:focus {
+  padding: 10px;
+  background-color: rgba(220, 220, 220, 0.219);
+  border-radius: 10px;
+}
+
+.main .right {
+  width: 30%;
+  padding: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.main .right .profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.main .right .profile img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.main .right .profile div p {
+  font-size: 15px;
+  color: rgb(65, 63, 63);
+  font-weight: 500;
+}
+.main .right .profile p {
+  color: rgb(5, 106, 238);
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.main .right .follow p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(116, 114, 114);
+}
+.main .right .follow p span {
+  margin-left: 110px;
+  color: black;
+}
+
+.main .right .follow .su {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  gap: 5px;
+}
+.main .right .follow .su img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main .right .follow p {
+  margin-top: 15px;
+}
+
+.main .right .follow .su div p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.main .right .follow .su > :last-child {
+  color: rgb(5, 106, 238);
+  margin-left: auto;
+  font-size: 12px;
+}
+
+/* Log In */
+
+.main {
+  margin-top: 10px;
+}
+
+.main .body {
+  width: 27%;
+  border: 1px solid rgba(128, 128, 128, 0.301);
+  margin: auto;
+  text-align: center;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.main .body h2 {
+  font-family: cursive;
+  font-size: 28px;
+}
+
+.main .body h4 {
+  color: grey;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.main .body .fb {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 5px;
+  margin: 17px;
+  gap: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #1876f2d8;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.main .body .fb:hover {
+  cursor: pointer;
+  background-color: #1877f2;
+}
+
+.main .body .fb p {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main .body .or {
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main .body .or hr {
+  width: 40%;
+  background-color: rgba(128, 128, 128, 0.192);
+  opacity: 40%;
+}
+.main .body .or p {
+  font-size: 13px;
+  font-weight: 500;
+  color: grey;
+  margin: 0;
+}
+
+.main .body .input {
+  margin: 0 20px;
+}
+
+.main .body .input input {
+  width: 100%;
+  font-size: 12px;
+  padding: 8px;
+  background-color: rgba(128, 128, 128, 0.055);
+  margin: 4px 0;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 3px;
+}
+/* .main .body .input input{} */
+
+.main .body .text p {
+  font-size: 11px;
+  color: grey;
+  margin: 20px;
+}
+.main .body .text p span {
+  font-weight: bold;
+  color: rgb(16, 27, 56);
+}
+.main .body .button button {
+  background-color: #4cb5f9;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  width: 90%;
+  font-weight: bold;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* footer button  */
+
+.main .login {
+  width: 27%;
+  border: 1px solid rgba(128, 128, 128, 0.301);
+  margin: 20px auto 0;
+  text-align: center;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.main .login p {
+  font-size: 13px;
+}
+
+.main .login p span {
+  color: #1877f2;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.main .app {
+  width: 27%;
+  margin: auto;
+  text-align: center;
+  border-radius: 2px;
+  padding: 20px;
+}
+.main .app div {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.main .app div img {
+  width: 45%;
+  height: 40px;
+}
+.main .app p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Registration */
+
+.main {
+  margin-top: 10px;
+}
+
+.main .body {
+  width: 27%;
+  border: 1px solid rgba(128, 128, 128, 0.301);
+  margin: auto;
+  text-align: center;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.main .body h2 {
+  font-family: cursive;
+  font-size: 28px;
+}
+
+.main .body h4 {
+  color: grey;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.main .body .fb {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 5px;
+  margin: 17px;
+  gap: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #1876f2d8;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.main .body .fb:hover {
+  cursor: pointer;
+  background-color: #1877f2;
+}
+
+.main .body .fb p {
+  font-size: 14px;
+}
+
+.main .body .or {
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main .body .or hr {
+  width: 40%;
+  background-color: rgba(128, 128, 128, 0.192);
+  opacity: 40%;
+}
+.main .body .or p {
+  font-size: 13px;
+  font-weight: 500;
+  color: grey;
+  margin: 0;
+}
+
+.main .body .input {
+  margin: 0 20px;
+}
+
+.main .body .input input {
+  width: 100%;
+  font-size: 12px;
+  padding: 8px;
+  background-color: rgba(128, 128, 128, 0.055);
+  margin: 4px 0;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 3px;
+}
+/* .main .body .input input{} */
+
+.main .body .text p {
+  font-size: 11px;
+  color: grey;
+  margin: 20px;
+}
+.main .body .text p span {
+  font-weight: bold;
+  color: rgb(16, 27, 56);
+}
+.main .body .button button {
+  background-color: #4cb5f9;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  width: 90%;
+  font-weight: bold;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+/* footer button  */
+
+.main .login {
+  width: 27%;
+  border: 1px solid rgba(128, 128, 128, 0.301);
+  margin: 20px auto 0;
+  text-align: center;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.main .login p {
+  font-size: 13px;
+}
+
+.main .login p span {
+  color: #1877f2;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.main .app {
+  width: 27%;
+  margin: auto;
+  text-align: center;
+  border-radius: 2px;
+  padding: 20px;
+}
+.main .app div {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.main .app div img {
+  width: 45%;
+  height: 40px;
+}
+.main .app p {
+  margin: 0;
+  font-size: 13px;
+}
+.modal-box {
+  position: fixed;
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  box-shadow: 0px 0px 12.5px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.btntnb {
+  text-align: right;
+}
